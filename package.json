@@ -1,0 +1,22 @@
+{
+  "name": "sassproject",
+  "version": "1.0.0",
+  "description": "responsive portfolio with Sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nata-stelmakh/sassProject.git"
+  },
+  "author": "N.Stelmakh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nata-stelmakh/sassProject/issues"
+  },
+  "homepage": "https://github.com/nata-stelmakh/sassProject#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
