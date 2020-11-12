@@ -1,26 +1,18 @@
-@import"config";
-@import"menu";
-@import"mobile";
+@import 'config';
+@import 'menu';
 
-*{
-    box-sizing:border-box;
+* {
+  box-sizing: border-box;
+}
 
-}
-body{
-    @include background;
-    background:$primary-color;
-    color: set-text-color($primary-color);
-    height: 100%;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    line-height: 1.5;
-}
-//Headings
-h1,h2,h3{
-    margin: 0;
-    font-weight: 400;
-&.lg-heading{
-    font-size: 6rem;
+body {
+  @include background;
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
 }
 
 // Headings
@@ -80,16 +72,6 @@ main {
       margin-top: 20vh;
     }
   }
-  .tech{
-    font-size: 2em;
-  }
-  
-  i{
-    margin: auto;
-    font-size:5em;
-    color: black;
-    padding: 10px;
-  }
 }
 
 .about-info {
@@ -112,7 +94,23 @@ main {
     font-size: 1.5rem;
   }
 
-  
+  .job-1 {
+    grid-area: job1;
+  }
+
+  .job-2 {
+    grid-area: job2;
+  }
+
+  .job-3 {
+    grid-area: job3;
+  }
+
+  .job {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
 }
 
 // Work/Projects
@@ -189,7 +187,6 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
-}
 }
 
 @import 'mobile';
