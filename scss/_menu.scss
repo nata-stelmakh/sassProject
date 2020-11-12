@@ -111,6 +111,7 @@
       }
     }
   
+
     .nav-link {
       display: inline-block;
       position: relative;
@@ -122,6 +123,7 @@
       text-decoration: none;
       @include easeOut;
   
+
       &:hover {
         color: $secondary-color;
       }
@@ -134,3 +136,6 @@
       transition-delay: $x * 0.1s;
     }
   }
+  i{
+    color: black;
+       }
