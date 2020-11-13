@@ -159,6 +159,13 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+  main .tech {
+    font-size: 2em; }
+  main i {
+    margin: auto;
+    font-size: 5em;
+    color: black;
+    padding: 10px; }
 
 .about-info {
   display: grid;
@@ -173,16 +180,6 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: white;
-    padding: 0.5rem;
-    border-bottom: #FBD407 5px solid; }
 
 .projects {
   display: grid;
