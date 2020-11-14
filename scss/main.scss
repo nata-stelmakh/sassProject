@@ -1,18 +1,26 @@
-@import 'config';
-@import 'menu';
+@import"config";
+@import"menu";
+@import"mobile";
 
-* {
-  box-sizing: border-box;
+*{
+    box-sizing:border-box;
+
 }
-
-body {
-  @include background;
-  background: $primary-color;
-  color: set-text-color($primary-color);
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
+body{
+    @include background;
+    background:$primary-color;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    line-height: 1.5;
+}
+//Headings
+h1,h2,h3{
+    margin: 0;
+    font-weight: 400;
+&.lg-heading{
+    font-size: 6rem;
 }
 
 // Headings
@@ -181,6 +189,7 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
 }
 
 @import 'mobile';
